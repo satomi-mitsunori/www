@@ -6,9 +6,14 @@
 (function($){
 	$(function(){
 		var obj = $('#iframe');
+		var fst = true;
 		
 		obj.on('load',function(){
-			location.href="https://www.asahi.com/";
+			if (fst) {
+				fst = false;
+			} else {
+				location.href="https://www.asahi.com/";
+			}
 		});
 	});
 })(jQuery);

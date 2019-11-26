@@ -1,9 +1,22 @@
 <html>
 <head>
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+<script type="text/javascript">
+(function($){
+	$(function(){
+		var obj = $('#iframe');
+		
+		obj.on('load',function(){
+			location.href="https://www.asahi.com/";
+		});
+	});
+})(jQuery);
+</script>
 </head>
 <body>
 TOP LINE
 <br>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSchkjC9ViHhF28h43oo4LifpjgtzrahQuuZbvJv_3tm-4FUvw/viewform?embedded=true" width="640" height="605" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<iframe id="iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSchkjC9ViHhF28h43oo4LifpjgtzrahQuuZbvJv_3tm-4FUvw/viewform?embedded=true" width="640" height="605" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 </body>
 </html>
